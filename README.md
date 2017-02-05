@@ -1,17 +1,22 @@
-# README
+# InfoKeep
 
+## Description
 
-Things you may want to cover:
+InfoKeep is a web-application tought as an easy way to save important notes.
+It was developed under Ruby On Rails, which is a ruby based framework, and
+deployed both remotely (in heroku) and  locally (by the use of Docker).
 
-* Ruby version *
+## Requirements
+
+* Ruby version
 
   >= 5.0.0.1
 
-* System dependencies *
+* System dependencies
 
   docker-compose version 1.10.0 or higher.
 
-* Configuration *
+## Configuration
 
   All configurations needed to run the project are properly set up and can
   be changed by modifying the following files:
@@ -27,12 +32,12 @@ Things you may want to cover:
      
      ./config/puma.rb: Ruby file defining general Puma Server configurations.
 
-* Deployment instructions *
+## Deployment instructions
 
-  Run the "docker-compose build" command in order to build the required services.
+  Run the ```docker-compose build``` command in order to build the required services.
   REMARK: It will read the "Dockerfile" to know which orders to execute.
 
-  Run the "docker-compose up" command, which aggregates the output of each container.
+  Run the ```docker-compose up``` command, which aggregates the output of each container.
   When the command exits (by pressing Ctrl + C), all containers are stopped.
 
   Once "Puma" is running, you will have to open a web-browser and go to
